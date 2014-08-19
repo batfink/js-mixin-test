@@ -10,9 +10,12 @@
 
         // read attributes from html element
         this.readAttributes();
-        
+
         // use the sayHello method from the mixin
         this.addEventListener('click', this.sayHello);
+
+        // check what’s in the proto object
+        //console.log(proto);
       }
     },
     readAttributes : {
