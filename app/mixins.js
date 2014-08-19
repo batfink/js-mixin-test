@@ -15,7 +15,7 @@ window.mixins.prototype = {
 // extend function
 window.extend = function(destination, source) {
 
-  Object.keys(source.prototype).forEach(function(prop, i) {
+  Object.keys(source.prototype).forEach(function(prop) {
 
     var propertyDescriptor = Object.getOwnPropertyDescriptor(source.prototype, prop);
 
