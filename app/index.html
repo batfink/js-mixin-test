@@ -13,8 +13,13 @@
 </head>
 <body>
 
-  <button is="mongo-button">Klikk me!</button>
-  <button is="mongo-button" msg="tjohei">Klikk me too!</button>
+  <button is="mongo-button" msg="tjobing!">Klikk meg!</button>
+
+  <script>
+    var button = document.createElement('button', 'mongo-button');
+    button.appendChild(document.createTextNode('Klikk meg og!'))
+    document.body.appendChild(button);
+  </script>
 
 </body>
 </html>

@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var path = require('path');
 var open = require('gulp-open');
+var deploy = require('gulp-gh-pages');
 var root = 'app', port = 9000;
 
 gulp.task('connect', function() {
@@ -24,5 +25,9 @@ gulp.task('open', function() {
     gulp.src(path.join(root, 'index.html'))
         .pipe(open('', { app: 'Google Chrome', url: 'http://localhost:'+ port }));
 })
+
+gulp.task('deploy', function() {
+    gulp.src('./app/**/*').pipe(deploy());
+});
 
 gulp.task('default', ['connect', 'open', 'watch']);

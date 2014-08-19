@@ -6,6 +6,7 @@
     "gulp-open": "~0.2.8",
     "gulp": "~3.8.7",
     "gulp-connect": "~2.0.6",
-    "document-register-element": "0.0.8"
+    "document-register-element": "0.0.8",
+    "gulp-gh-pages": "~0.3.3"
   }
 }

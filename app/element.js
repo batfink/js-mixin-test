@@ -26,7 +26,7 @@
     }
   });
 
-  document.registerElement('mongo-button', {
+  window.MongoButton = document.registerElement('mongo-button', {
     prototype: proto,
     extends: 'button'
   });
