@@ -1,7 +1,7 @@
 "use strict";
 
 var extend = require('./extend');
-var mixins = require('./mixins')
+var mixins = require('./mixins');
 
 var proto = Object.create(HTMLButtonElement.prototype, {
   createdCallback: {
